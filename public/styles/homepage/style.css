@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(15, 40, 61);
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome_to_homepage {
+    color: dodgerblue;
+    position: relative;
+    transform: translateY(-100px);
+}
+.welcome_to_homepage span {
+    width: 100px;
+    height: 100px;
+    border: 10px solid dodgerblue;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    animation: span_animation 2s linear infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes span_animation {
+    0% {
+        border: 5px solid transparent;
+        margin-top: 0%;
+    }
+    100% {
+        margin-top: 50px;
+        background-color: dodgerblue;
+        box-shadow: 1px 1px 2px dodgerblue;
+    }
+}

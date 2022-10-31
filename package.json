@@ -1,0 +1,32 @@
+{
+    "name": "Server",
+    "version": "1.0.0",
+    "description": "Jovens Visionarios Server",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "devStart": "nodemon src/server.js"
+    },
+    "author": "Eufrasio Joao",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    },
+    "dependencies": {
+        "aos": "^2.3.4",
+        "bcrypt": "^5.0.1",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "date-fns": "^2.29.3",
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "express-validation": "^4.1.0",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.29.4",
+        "mysql2": "^2.3.3",
+        "nodemailer": "^6.7.5",
+        "sequelize": "^6.21.3",
+        "sequelize-cli": "^6.4.1",
+        "socket.io": "^4.5.1"
+    }
+}
